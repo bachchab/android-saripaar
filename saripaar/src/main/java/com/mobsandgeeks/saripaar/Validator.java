@@ -168,8 +168,8 @@ public class Validator {
         if (controller instanceof Activity) {
             mValidationContext = new ValidationContext((Activity) controller);
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB
-                && controller instanceof Fragment) {
-            Activity activity = ((Fragment) controller).getActivity();
+                && controller instanceof androidx.fragment.app.Fragment) {
+            Activity activity = ((androidx.fragment.app.Fragment) controller).getActivity();
             mValidationContext = new ValidationContext(activity);
         }
         // Else, lazy init ValidationContext in #getRuleAdapterPair(Annotation, Field)
