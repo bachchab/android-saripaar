@@ -1125,7 +1125,7 @@ public class DomainValidator implements Serializable {
             return line;
         }
         try {
-            return (String) m.invoke(null, new String[]{line.toLowerCase(Locale.ENGLISH)});
+            return (String) m.invoke(null, (Object) new String[]{line.toLowerCase(Locale.ENGLISH)});
         } catch (IllegalAccessException e) {
             throw new RuntimeException(e); // Should not happen
         } catch (InvocationTargetException e) {

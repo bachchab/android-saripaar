@@ -14,7 +14,7 @@
 
 package com.mobsandgeeks.saripaar.annotation;
 
-import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 
 import com.mobsandgeeks.saripaar.rule.IsbnRule;
 
