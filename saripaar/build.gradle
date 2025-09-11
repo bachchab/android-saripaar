@@ -14,8 +14,8 @@ android {
         targetSdkVersion 34
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_6
-        targetCompatibility JavaVersion.VERSION_1_6
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     libraryVariants.all { variant ->
         def name = variant.buildType.name
@@ -33,5 +33,3 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
-
-apply from: '../gradle-mvn-push.gradle'
